@@ -24,7 +24,6 @@ body{
  color:var(--mg-dark);
 }
 
-/* HEADER */
 header{
  text-align:center;
  padding:50px 20px 30px;
@@ -33,16 +32,16 @@ header{
 }
 
 .delivery{
-  font-size:.85rem;
-  color:var(--mg-main);
-  margin-top:12px;
-  font-style:italic;
-  letter-spacing:1px;
-  background:linear-gradient(90deg,#f6efe8,#fbf7f3);
-  padding:6px 14px;
-  border-radius:8px;
-  box-shadow:0 2px 6px rgba(0,0,0,0.08);
-  display:inline-block;
+ font-size:.85rem;
+ color:var(--mg-main);
+ margin-top:12px;
+ font-style:italic;
+ letter-spacing:1px;
+ background:linear-gradient(90deg,#f6efe8,#fbf7f3);
+ padding:6px 14px;
+ border-radius:8px;
+ box-shadow:0 2px 6px rgba(0,0,0,0.08);
+ display:inline-block;
 }
 
 .logo-container{
@@ -69,7 +68,6 @@ header h1{
  color:#8a7b6b;
 }
 
-/* MENU */
 .menu{
  max-width:950px;
  margin:50px auto 120px;
@@ -115,17 +113,6 @@ header h1{
  font-size:1.1rem;
 }
 
-.upcoming{
-  opacity:0.6;
-  background:#f9f6f3;
-  border:1px dashed var(--mg-accent);
-}
-
-.upcoming span{
-  color:#c89b6d;
-  font-style:italic;
-}
-
 .star{
  border-left:5px solid var(--mg-main);
  background:#fffaf5;
@@ -136,16 +123,6 @@ em{
  color:#777;
 }
 
-/* PROMOS */
-.promo{
- background:linear-gradient(135deg,#8a5a33,#c89b6d);
- color:#fff;
- border-radius:16px;
- padding:20px;
- margin-bottom:15px;
-}
-
-/* SELECTOR */
 .qty{
  display:flex;
  align-items:center;
@@ -167,7 +144,6 @@ em{
  font-weight:600;
 }
 
-/* CONTADOR */
 .counter{
  position:fixed;
  bottom:80px;
@@ -179,7 +155,6 @@ em{
  font-size:.9rem;
 }
 
-/* WHATSAPP */
 .whatsapp{
  position:fixed;
  bottom:25px;
@@ -192,7 +167,6 @@ em{
  font-weight:500;
 }
 
-/* FOOTER */
 footer{
  background:#1f140d;
  color:#ddd;
@@ -206,46 +180,15 @@ footer{
 <body>
 
 <header>
-  <div class="logo-container">
-    <img src="logo.png">
-    <h1>El Rincón del MG</h1>
-    <div class="tagline">STREET GOURMET · SABOR CASERO</div>
-    <div class="delivery">Entregas a domicilio con costo adicional dependiendo la distancia</div>
-  </div>
+<div class="logo-container">
+<img src="logo.png">
+<h1>El Rincón del MG</h1>
+<div class="tagline">STREET GOURMET · SABOR CASERO</div>
+<div class="delivery">Entregas a domicilio con costo adicional dependiendo la distancia</div>
+</div>
 </header>
 
 <section class="menu">
-
-<!-- PROMOCIONES -->
-<div class="category">
-<h2>Promociones MG</h2>
-
-<div class="promo" data-name="Combo Coreano Lovers" data-price="125">
-<strong>Combo Coreano Lovers</strong><br>
-Pollo tempura coreano con salsa gochujang dulce picante + papas + refresco<br>
-Incluye aderezo chipotle o ranch<br>
-<b>$125</b>
-<div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div>
-</div>
-
-<div class="promo" data-name="Promo Pareja MG" data-price="150">
-<strong>Promo Pareja MG</strong><br>
-2 hamburguesas clásicas (carne, queso, lechuga, jitomate)<br>
-Papas grandes + 2 refrescos<br>
-Aderezos: mayonesa, catsup y mostaza<br>
-<b>$150</b>
-<div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div>
-</div>
-
-<div class="promo" data-name="Promo Familiar MG" data-price="280">
-<strong>Promo Familiar MG</strong><br>
-4 hamburguesas clásicas + papas grandes + 4 refrescos<br>
-Incluye aderezos de la casa<br>
-<b>$280</b>
-<div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div>
-</div>
-
-</div>
 
 <!-- FAVORITA -->
 <div class="category">
@@ -293,16 +236,6 @@ Papas chicas · Refresco
 <div class="category">
 <h2>Combos de Antojo</h2>
 
-<div class="item" data-name="Combo Nuggets" data-price="75">
-<div>
-<strong>Combo Nuggets</strong><br>
-6 nuggets crujientes<br>
-Papas chicas · Refresco
-<div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div>
-</div>
-<span>$75</span>
-</div>
-
 <div class="item" data-name="Combo Boneless MG" data-price="95">
 <div>
 <strong>Combo Boneless MG</strong><br>
@@ -313,22 +246,17 @@ Papas chicas · Refresco
 <span>$95</span>
 </div>
 
-<div class="item" data-name="Combo Salchipapas" data-price="80">
-<div>
-<strong>Combo Salchipapas</strong><br>
-Salchicha frita con papas y chorizo<br>
-<em>Aderezos: catsup, mayonesa y mostaza</em><br>
-Refresco
-<div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div>
-</div>
-<span>$80</span>
 </div>
 
-<div class="item" data-name="Combo Papas Especiales" data-price="85">
+<!-- BURRITOS -->
+<div class="category">
+<h2>Combos de Burritos</h2>
+
+<div class="item" data-name="Combo Burrito Clásico" data-price="85">
 <div>
-<strong>Combo Papas Especiales</strong><br>
-Papas con condimento especial, queso fundido y tocino<br>
-Refresco
+<strong>Combo Burrito Clásico</strong><br>
+Carne o pollo, arroz, queso y verduras<br>
+Papas chicas · Refresco
 <div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div>
 </div>
 <span>$85</span>
@@ -336,114 +264,35 @@ Refresco
 
 </div>
 
-<!-- COREANO -->
+<!-- ENSALADAS -->
 <div class="category">
-<h2 style="color:#b22222;">Sabores Coreanos MG</h2>
+<h2>Combos de Ensaladas</h2>
 
-<div class="item star" data-name="Pollo Tempura Coreano" data-price="75">
+<div class="item" data-name="Combo Ensalada César" data-price="70">
 <div>
-<strong>Pollo Tempura Coreano</strong><br>
-Pollo crujiente con salsa coreana dulce picante estilo gochujang<br>
-Papas · Refresco
+<strong>Combo Ensalada César</strong><br>
+Lechuga, pollo, crutones y aderezo<br>
+Refresco
 <div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div>
 </div>
-<span>$75</span>
+<span>$70</span>
 </div>
 
-<div class="item" data-name="Boneless Coreanos" data-price="85">
-<div>
-<strong>Boneless Coreanos</strong><br>
-Boneless con salsa miel ajo coreana<br>
-Papas · Refresco
-<div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div>
-</div>
-<span>$85</span>
 </div>
 
-<div class="item" data-name="Alitas Coreanas" data-price="90">
-<div>
-<strong>Alitas Coreanas</strong><br>
-Alitas caramelizadas con salsa coreana<br>
-Papas · Refresco
-<div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div>
-</div>
-<span>$90</span>
-</div>
-
-<div class="item star" data-name="Combo Coreano Especial" data-price="120">
-<div>
-<strong>Combo Coreano Especial</strong><br>
-Pollo Tempura Coreano + Arroz Frito Coreano<br>
-Papas · Refresco
-<div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div>
-</div>
-<span>$120</span>
-</div>
-</div>
-
-<!-- TORTAS -->
+<!-- DULCES -->
 <div class="category">
-<h2>Combos de Tortas</h2>
+<h2>Dulces & Snacks</h2>
 
-<div class="item" data-name="Combo Torta Cubana" data-price="110">
-<div>
-<strong>Combo Torta Cubana</strong><br>
-Milanesa, jamón, salchicha, pierna, queso Oaxaca, queso amarillo, aguacate, verduras, frijoles refritos<br>
-<em>Aderezos: mayonesa y mostaza</em><br>
-Papas chicas · Refresco
-<div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div>
-</div>
-<span>$110</span>
+<div class="item" data-name="Gomitas" data-price="20">
+<div>Gomitas<div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div></div>
+<span>$20</span>
 </div>
 
-<div class="item" data-name="Combo Torta Mexa" data-price="95">
-<div>
-<strong>Combo Torta Mexa</strong><br>
-Pechuga empanizada, queso Oaxaca, aguacate, lechuga, jitomate, frijoles refritos<br>
-<em>Aderezo: mayonesa</em><br>
-Papas chicas · Refresco
-<div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div>
+<div class="item" data-name="Rockaleta Bola" data-price="25">
+<div>Rockaleta Bola<div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div></div>
+<span>$25</span>
 </div>
-<span>$95</span>
-</div>
-
-<div class="item" data-name="Combo Torta Alambre MG" data-price="115">
-<div>
-<strong>Combo Torta Alambre MG</strong><br>
-Pollo, pimientos, cebolla, champiñón, tocino, queso fundido, frijoles refritos<br>
-<em>Aderezos: mayonesa y chipotle</em><br>
-Papas chicas · Refresco
-<div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div>
-</div>
-<span>$115</span>
-</div>
-
-<div class="item" data-name="Combo Torta de Empanizado" data-price="100">
-<div>
-<strong>Combo Torta de Empanizado</strong><br>
-Pollo o puerco empanizado, queso Oaxaca, aguacate, lechuga, jitomate, frijoles refritos<br>
-<em>Aderezos: mayonesa y mostaza</em><br>
-Papas chicas · Refresco
-<div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div>
-</div>
-<span>$100</span>
-</div>
-
-</div>
-
-<!-- EXTRAS -->
-<div class="category">
-<h2>Extras</h2>
-
-<div class="item" data-name="Queso extra" data-price="10"><div>Queso extra<div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div></div><span>$10</span></div>
-
-<div class="item" data-name="Doble carne" data-price="25"><div>Doble carne<div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div></div><span>$25</span></div>
-
-<div class="item" data-name="Papas grandes" data-price="15"><div>Papas grandes<div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div></div><span>$15</span></div>
-
-<div class="item" data-name="Refresco adicional" data-price="20"><div>Refresco adicional<div class="qty"><button onclick="updateQty(this,-1)">-</button><span>0</span><button onclick="updateQty(this,1)">+</button></div></div><span>$20</span></div>
-
-<div class="item upcoming"><div>Aros de cebolla</div><span>Próximamente</span></div>
 
 </div>
 
@@ -454,7 +303,6 @@ Papas chicas · Refresco
 </footer>
 
 <div class="counter" id="counter">🛒 0 productos</div>
-
 <a class="whatsapp" href="#">Pedir por WhatsApp</a>
 
 <script>
